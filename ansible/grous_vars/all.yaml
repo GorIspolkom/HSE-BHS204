@@ -1,0 +1,13 @@
+source_code_path: "/home/croc/vuz/project/bhs2024/bhs2024-git/application"
+docker_compose_path: "/opt/bhs-2024"
+# Docker daemon options as a dict
+docker_daemon_options: {
+  storage-driver: "overlay2",
+  dns: ["8.8.8.8"],
+  log-driver: "json-file",
+  log-opts: {
+        "max-size": "25m",
+        "max-file": "5",
+        "compress": "true"
+    }
+}

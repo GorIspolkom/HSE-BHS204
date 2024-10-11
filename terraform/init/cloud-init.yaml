@@ -1,0 +1,15 @@
+#cloud-config
+merge_how: "dict(recurse_array)+list(recurse_list,recurse_str)+str()"
+
+
+preserve_hostname: false
+hostname: ${hostname}
+fqdn: ${hostname}.${domain}
+prefer_fqdn_over_hostname: true
+
+manage_etc_hosts: true
+manage_resolv_conf: true
+
+resolv_conf:
+  nameservers: ['10.55.1.1', '8.8.8.8']
+

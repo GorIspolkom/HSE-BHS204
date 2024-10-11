@@ -1,0 +1,12 @@
+---
+bhs_databases:
+  hosts:
+    bhs2024.test.local:
+
+bhs_webservers:
+    bhs2024.test.local:
+
+bhs-dev:
+  children:
+    bhs_databases:
+    bhs_webservers:

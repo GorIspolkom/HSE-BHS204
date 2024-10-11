@@ -1,0 +1,34 @@
+# vim: ai et ts=2 st=2 sw=2 :
+---
+galaxy_info:
+  author: IT Infrastructure at MET Norway
+  description: Role for managing NTP with chrony
+  company: MET Norway
+  role_name: chrony
+  namespace: metno
+
+  license: GPLv2
+
+  min_ansible_version: "2.16"
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - "noble"
+        - "jammy"
+        - "focal"
+    - name: EL
+      versions:
+        - "7"
+        - "8"
+        - "9"
+
+  galaxy_tags:
+    - ntp
+    - time
+    - timezone
+
+collections:
+  - "community.general"
+
+dependencies: []

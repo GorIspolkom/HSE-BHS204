@@ -1,0 +1,11 @@
+---
+collections:
+  - name: community.docker
+    source: https://github.com/ansible-collections/community.docker.git
+    type: git
+    version: 3.12.1
+  - name: community.general
+    source: https://github.com/ansible-collections/community.general.git
+    type: git
+    version: 9.5.0
+

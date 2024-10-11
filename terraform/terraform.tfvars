@@ -1,0 +1,16 @@
+bucket_name      = "bhs-test"
+az               = "ru-msk-comp1p"
+eips_count       = 0
+vms_count        = 1
+hostnames        = ["bhs2024"]
+domain           = "test.local"
+vm_ip            = ["10.10.10.20"]
+vm_instance_type = ["c5p.2large"]
+init_script      = ["init/cloud-init.yaml"]
+allow_tcp_ports  = [22, 80, 443, 3389]
+network_ip       = "10.10.10.0/24"
+cidr_block       = "10.10.0.0/16"
+vm_image         = "cmi-B3021A20"
+vm_volume_type   = "st2"
+vm_volume_size   = [32]
+project_name     = "BHS-2024"
